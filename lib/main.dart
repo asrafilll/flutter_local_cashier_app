@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:personal_cashier_app/login_page.dart';
 
 void main() {
@@ -10,9 +11,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(
+        textTheme: GoogleFonts.poppinsTextTheme(),
+      ),
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: const LoginPage(),
     );
   }
 }
