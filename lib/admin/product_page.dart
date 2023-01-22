@@ -100,9 +100,7 @@ class _AdminProductPageState extends State<AdminProductPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Icon(
-                    Icons.chevron_left,
-                  ),
+                  const SizedBox(),
                   const Text(
                     'Stock Product',
                     style: TextStyle(
