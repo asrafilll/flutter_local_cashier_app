@@ -4,8 +4,8 @@ import 'package:personal_cashier_app/core/app_style.dart';
 import 'package:personal_cashier_app/core/component/custom_button.dart';
 import 'package:personal_cashier_app/login_page.dart';
 
-class AdminSettingPage extends StatelessWidget {
-  const AdminSettingPage({super.key});
+class ClientSettingsPage extends StatelessWidget {
+  const ClientSettingsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class AdminSettingPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   const Text(
-                    'Admin John',
+                    'Cashier Doe',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                     ),
@@ -42,18 +42,6 @@ class AdminSettingPage extends StatelessWidget {
             const ItemSettingComponent(
               icon: 'assets/icons/icon_address.png',
               title: 'Address Info',
-            ),
-            const ItemSettingComponent(
-              icon: 'assets/icons/icon_payment.png',
-              title: 'Payment Method',
-            ),
-            const ItemSettingComponent(
-              icon: 'assets/icons/icon_rewards.png',
-              title: 'Rewards or Coupons',
-            ),
-            const ItemSettingComponent(
-              icon: 'assets/icons/icon_settings.png',
-              title: 'Settings',
             ),
             const ItemSettingComponent(
               icon: 'assets/icons/icon_policy.png',
@@ -74,7 +62,7 @@ class AdminSettingPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (builder) => const LoginPage(),
+                    builder: (builder) => LoginPage(),
                   ),
                 );
               },
