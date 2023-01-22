@@ -23,7 +23,7 @@ class _AdminMainPageState extends State<AdminMainPage> {
 
   final List<Widget> _myPage = [
     AdminHomePage(),
-    const AdminProductPage(),
+    AdminProductPage(),
     const AdminChartPage(),
     const AdminSettingPage(),
   ];
