@@ -21,11 +21,11 @@ class _AdminMainPageState extends State<AdminMainPage> {
     });
   }
 
-  final List<Widget> _myPage = const [
+  final List<Widget> _myPage = [
     AdminHomePage(),
-    AdminProductPage(),
-    AdminChartPage(),
-    AdminSettingPage(),
+    const AdminProductPage(),
+    const AdminChartPage(),
+    const AdminSettingPage(),
   ];
 
   @override

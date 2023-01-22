@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:personal_cashier_app/core/app_style.dart';
 
 class DashboardProductComponent extends StatelessWidget {
-  const DashboardProductComponent({super.key});
+  const DashboardProductComponent({
+    super.key,
+    required this.myFruit,
+  });
+
+  final Map<String, dynamic> myFruit;
 
   @override
   Widget build(BuildContext context) {
@@ -19,15 +24,15 @@ class DashboardProductComponent extends StatelessWidget {
           Row(
             children: [
               Image.asset(
-                'assets/products/apple.png',
+                myFruit['image'],
                 width: 45,
               ),
               const SizedBox(width: 8),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
-                    'Apel',
+                    myFruit['name'],
                     style: TextStyle(
                       color: kBlackColor,
                       fontWeight: FontWeight.w600,

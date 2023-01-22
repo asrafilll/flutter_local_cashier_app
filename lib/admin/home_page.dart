@@ -4,7 +4,30 @@ import 'package:personal_cashier_app/admin/component/dashboard_summary.dart';
 import 'package:personal_cashier_app/core/app_style.dart';
 
 class AdminHomePage extends StatelessWidget {
-  const AdminHomePage({super.key});
+  AdminHomePage({super.key});
+
+  final List<Map<String, dynamic>> myFruit = [
+    {
+      'image': 'assets/products/apple.png',
+      'name': 'Apel',
+      'totalSold': 30,
+    },
+    {
+      'image': 'assets/products/orange.png',
+      'name': 'Jeruk',
+      'totalSold': 20,
+    },
+    {
+      'image': 'assets/products/watermelon.png',
+      'name': 'Semangka',
+      'totalSold': 10,
+    },
+    {
+      'image': 'assets/products/chilli.png',
+      'name': 'Cabe Merah',
+      'totalSold': 50,
+    },
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -49,11 +72,12 @@ class AdminHomePage extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
-                itemBuilder: (context, index) =>
-                    const DashboardProductComponent(),
+                itemBuilder: (context, index) {
+                  return DashboardProductComponent(myFruit: myFruit[index]);
+                },
                 separatorBuilder: (context, index) =>
                     const SizedBox(height: 20),
-                itemCount: 10,
+                itemCount: myFruit.length,
               )
             ],
           ),
