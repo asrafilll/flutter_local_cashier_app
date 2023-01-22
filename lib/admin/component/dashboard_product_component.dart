@@ -33,13 +33,13 @@ class DashboardProductComponent extends StatelessWidget {
                 children: [
                   Text(
                     myFruit['name'],
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: kBlackColor,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  SizedBox(height: 4),
-                  Text(
+                  const SizedBox(height: 4),
+                  const Text(
                     'Total Penjualan : 30kg',
                     style: TextStyle(
                       color: kGreyColor,
