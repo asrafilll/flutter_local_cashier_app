@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:personal_cashier_app/admin/main.dart';
+import 'package:personal_cashier_app/client/main.dart';
 import 'package:personal_cashier_app/core/app_style.dart';
 import 'package:personal_cashier_app/core/component/custom_button.dart';
 
@@ -42,7 +43,14 @@ class LoginPage extends StatelessWidget {
           ),
           const SizedBox(height: 30),
           CustomButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (builder) => const ClientMainPage(),
+                ),
+              );
+            },
             title: 'Login as Cashier',
             bgColor: kPrimaryColor,
           ),
