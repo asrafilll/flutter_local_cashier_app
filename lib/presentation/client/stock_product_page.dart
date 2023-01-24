@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:personal_cashier_app/admin/add_product_page.dart';
-import 'package:personal_cashier_app/admin/component/stock_product_component.dart';
 import 'package:personal_cashier_app/core/app_style.dart';
+import 'package:personal_cashier_app/presentation/admin/component/stock_product_component.dart';
 
 class ClientStockProductPage extends StatefulWidget {
   const ClientStockProductPage({super.key});

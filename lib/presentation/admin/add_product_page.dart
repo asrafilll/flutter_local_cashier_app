@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:personal_cashier_app/admin/component/new_product_form_component.dart';
 import 'package:personal_cashier_app/core/component/custom_button.dart';
+import 'package:personal_cashier_app/presentation/admin/component/new_product_form_component.dart';
 
 class AddProductPage extends StatelessWidget {
   const AddProductPage({super.key});

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:personal_cashier_app/admin/main.dart';
-import 'package:personal_cashier_app/client/main.dart';
 import 'package:personal_cashier_app/core/app_style.dart';
 import 'package:personal_cashier_app/core/component/custom_button.dart';
+
+import 'presentation/admin/main.dart';
+import 'presentation/client/main.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

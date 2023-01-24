@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:personal_cashier_app/admin/component/dashboard_product_component.dart';
-import 'package:personal_cashier_app/admin/component/dashboard_summary.dart';
 import 'package:personal_cashier_app/core/app_style.dart';
+import 'package:personal_cashier_app/presentation/admin/component/dashboard_product_component.dart';
+import 'package:personal_cashier_app/presentation/admin/component/dashboard_summary.dart';
 
 class AdminHomePage extends StatelessWidget {
   AdminHomePage({super.key});

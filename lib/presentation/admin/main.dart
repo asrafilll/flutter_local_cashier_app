@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:personal_cashier_app/admin/chart_page.dart';
-import 'package:personal_cashier_app/admin/home_page.dart';
-import 'package:personal_cashier_app/admin/product_page.dart';
-import 'package:personal_cashier_app/admin/setting_page.dart';
 import 'package:personal_cashier_app/core/app_style.dart';
+import 'package:personal_cashier_app/presentation/admin/chart_page.dart';
+import 'package:personal_cashier_app/presentation/admin/home_page.dart';
+import 'package:personal_cashier_app/presentation/admin/product_page.dart';
+
+import 'setting_page.dart';
 
 class AdminMainPage extends StatefulWidget {
   const AdminMainPage({super.key});
@@ -23,7 +24,7 @@ class _AdminMainPageState extends State<AdminMainPage> {
 
   final List<Widget> _myPage = [
     AdminHomePage(),
-    AdminProductPage(),
+    const AdminProductPage(),
     const AdminChartPage(),
     const AdminSettingPage(),
   ];

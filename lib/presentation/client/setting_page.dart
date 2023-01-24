@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:personal_cashier_app/admin/component/item_setting_component.dart';
 import 'package:personal_cashier_app/core/app_style.dart';
 import 'package:personal_cashier_app/core/component/custom_button.dart';
 import 'package:personal_cashier_app/login_page.dart';
+import 'package:personal_cashier_app/presentation/admin/component/item_setting_component.dart';
 
 class ClientSettingsPage extends StatelessWidget {
   const ClientSettingsPage({super.key});
@@ -62,7 +62,7 @@ class ClientSettingsPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (builder) => LoginPage(),
+                    builder: (builder) => const LoginPage(),
                   ),
                 );
               },

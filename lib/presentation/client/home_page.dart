@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:personal_cashier_app/client/component/client_add_product_component.dart';
 import 'package:personal_cashier_app/core/app_style.dart';
+import 'package:personal_cashier_app/presentation/client/component/client_add_product_component.dart';
 
 class ClientHomePage extends StatelessWidget {
   const ClientHomePage({super.key});
