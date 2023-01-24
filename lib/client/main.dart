@@ -51,8 +51,8 @@ class _ClientMainPageState extends State<ClientMainPage> {
             label: 'Product',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.bar_chart),
-            label: 'Report',
+            icon: Icon(Icons.folder),
+            label: 'Stock',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),

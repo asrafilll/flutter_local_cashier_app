@@ -92,37 +92,18 @@ class _ClientStockProductPageState extends State<ClientStockProductPage> {
         controller: ScrollController(),
         child: Padding(
           padding: const EdgeInsets.symmetric(
-            vertical: 60,
+            vertical: 70,
             horizontal: 32,
           ),
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  const SizedBox(),
-                  const Text(
-                    'Stock Product',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 16,
-                      color: kBlackColor,
-                    ),
-                  ),
-                  InkWell(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (builder) => const AddProductPage(),
-                        ),
-                      );
-                    },
-                    child: const Icon(
-                      Icons.add_box_outlined,
-                    ),
-                  ),
-                ],
+              const Text(
+                'Stock Product',
+                style: TextStyle(
+                  fontWeight: FontWeight.w600,
+                  fontSize: 16,
+                  color: kBlackColor,
+                ),
               ),
               const SizedBox(height: 30),
               ElevatedButton(
