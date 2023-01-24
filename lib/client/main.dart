@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:personal_cashier_app/client/client_home_page.dart';
-import 'package:personal_cashier_app/client/client_new_order_page.dart';
-import 'package:personal_cashier_app/client/client_settings_page.dart';
-import 'package:personal_cashier_app/client/client_stock_product_page.dart';
+import 'package:personal_cashier_app/client/home_page.dart';
+import 'package:personal_cashier_app/client/new_order_page.dart';
+import 'package:personal_cashier_app/client/setting_page.dart';
+import 'package:personal_cashier_app/client/stock_product_page.dart';
 import 'package:personal_cashier_app/core/app_style.dart';
 
 class ClientMainPage extends StatefulWidget {
